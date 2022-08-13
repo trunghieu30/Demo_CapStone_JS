@@ -1,0 +1,189 @@
+@import '../../themes/variable';
+@import '../../base/base.scss';
+
+.header {
+    background-color: black;
+    height: $text-5xl;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
+            margin-top: $text-xs;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .basket {
+                img {
+                    width: 50%;
+                }
+
+                span {
+                    font-size: $text-2xl;
+                    color: $bg-c1-light;
+                }
+            }
+
+            a {
+                margin-left: 10px;
+                font-size: 16px;
+                color: rgb(182, 178, 178);
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.menu {
+    .container {
+        display: flex;
+        align-items: center;
+
+        .navbar {
+            a {
+                text-decoration: none;
+                color: rgb(100, 99, 99);
+                margin-right: 20px;
+                font-size: 20px;
+                font-weight: 400;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 3px;
+                    width: 100%;
+                    background-color: $text-c1-dark;
+                    bottom: -3px;
+                    left: 0;
+                    transform: scale(0, 1);
+                    transition: transform 0.3s;
+                }
+
+                &:hover {
+                    color: #000;
+
+                    &::before {
+                        transform: scale(1, 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.carousel {
+    background-image: url(../../../img/image\ 6.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: auto;
+    margin: 0 250px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .navi-left {
+            margin-right: 30px;
+        }
+
+        .left {
+            width: 70%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .right {
+            width: 30%;
+
+            h3 {
+                font-size: 30px;
+                font-weight: 300;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 300;
+                margin-bottom: 30px;
+            }
+
+            .btn-buy {
+                padding: 10px 30px;
+                background: #F8B653;
+                border-style: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.product_feature {
+    .container {
+        .title-featured-product {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            .col {
+                .card {
+                    background-color: #f8f8f8;
+
+                    a {
+                        font-size: 24px;
+                        font-weight: 300;
+                        color: #000;
+                        line-height: 64px;
+                        text-decoration: none;
+                        display: inline-block;
+                        width: 175px;
+                        height: 64px;
+                        background-color: #e1b067;
+                        text-align: center;
+                    }
+
+                    span {
+                        position: absolute;
+                        width: 175px;
+                        height: 64px;
+                        top: auto;
+                        right: auto;
+                        bottom: 0;
+                        left: 174px;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #000;
+                        background-color: #dedddc;
+                        text-align: center;
+                        padding: 20px 50px;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+}

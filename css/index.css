@@ -1,0 +1,176 @@
+.text-red-100 {
+  color: "# FF6347";
+}
+
+.text-red-200 {
+  color: "#EE5C42";
+}
+
+.text-red-300 {
+  color: "#CD4F39";
+}
+
+/*-----text: css cho text ---------*/
+/* -------------------- mixin -----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: black;
+  height: 50px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .left {
+  margin-top: 10px;
+}
+.header .container .left img {
+  width: 100%;
+}
+.header .container .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .right .basket img {
+  width: 50%;
+}
+.header .container .right .basket span {
+  font-size: 20px;
+  color: #fff;
+}
+.header .container .right a {
+  margin-left: 10px;
+  font-size: 16px;
+  color: rgb(182, 178, 178);
+  font-weight: 300;
+}
+
+.menu .container {
+  display: flex;
+  align-items: center;
+}
+.menu .container .navbar a {
+  text-decoration: none;
+  color: rgb(100, 99, 99);
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+}
+.menu .container .navbar a::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+  bottom: -3px;
+  left: 0;
+  transform: scale(0, 1);
+  transition: transform 0.3s;
+}
+.menu .container .navbar a:hover {
+  color: #000;
+}
+.menu .container .navbar a:hover::before {
+  transform: scale(1, 1);
+}
+
+.carousel {
+  background-image: url(../../../img/image\ 6.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: auto;
+  margin: 0 250px;
+}
+.carousel .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.carousel .container .navi-left {
+  margin-right: 30px;
+}
+.carousel .container .left {
+  width: 70%;
+}
+.carousel .container .left img {
+  width: 100%;
+}
+.carousel .container .right {
+  width: 30%;
+}
+.carousel .container .right h3 {
+  font-size: 30px;
+  font-weight: 300;
+}
+.carousel .container .right p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.carousel .container .right .btn-buy {
+  padding: 10px 30px;
+  background: #F8B653;
+  border-style: none;
+  color: #fff;
+}
+
+.product_feature .container .title-featured-product {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+}
+.product_feature .container .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.product_feature .container .row .col .card {
+  background-color: #f8f8f8;
+}
+.product_feature .container .row .col .card a {
+  font-size: 24px;
+  font-weight: 300;
+  color: #000;
+  line-height: 64px;
+  text-decoration: none;
+  display: inline-block;
+  width: 175px;
+  height: 64px;
+  background-color: #e1b067;
+  text-align: center;
+}
+.product_feature .container .row .col .card span {
+  position: absolute;
+  width: 175px;
+  height: 64px;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 174px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  background-color: #dedddc;
+  text-align: center;
+  padding: 20px 50px;
+}
+.product_feature .container .row .col .card img {
+  width: 100%;
+}

@@ -1,0 +1,162 @@
+@import '../../themes/variable';
+@import '../../base/base.scss';
+
+
+.product {
+    height: 530px;
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .product-left {
+            display: flex;
+            justify-content: center;
+            width: 40%;
+
+            .product-img-content {
+                width: 100%;
+                position: relative;
+                width: 334px;
+                height: 335px;
+                text-align: center;
+                background-color: #f8f8f8;
+                top: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 220px;
+                    height: 200px;
+                    position: relative;
+                }
+            }
+        }
+
+        .product-right {
+            width: 60%;
+
+            .product-content {
+                padding-top: 60px;
+
+                .item-title {
+                    color: black;
+                    font-weight: 300;
+                    font-size: 30px;
+                }
+
+                .item-content {
+                    color: #140101;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+
+                .item-available {
+                    color: #1ED90E;
+                    font-weight: 500;
+                    font-size: 24px;
+                }
+
+                .item-size {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 40%;
+
+                    .size-box {
+                        display: block;
+                        text-align: center;
+                        padding: 5px 8px;
+                        background-color: #ccc;
+                        color: #1E1D1D;
+                        font-weight: 600;
+                        font-size: 24px;
+                    }
+                }
+
+                .item-price {
+                    padding: 12px 0 0 0;
+                    color: #FC0303;
+                    font-weight: 600;
+                    font-size: 30px;
+                }
+
+                .btn {
+                    background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+                    color: #FFF8F8;
+                    padding: 15px 30px;
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+.Relate-Product {
+    .container {
+        .title-relate-product {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            .col {
+                .card {
+                    background-color: #f8f8f8;
+
+                    a {
+                        font-size: 24px;
+                        font-weight: 300;
+                        color: #000;
+                        line-height: 64px;
+                        text-decoration: none;
+                        display: inline-block;
+                        width: 175px;
+                        height: 64px;
+                        background-color: #e1b067;
+                        text-align: center;
+                    }
+
+                    span {
+                        position: absolute;
+                        width: 175px;
+                        height: 64px;
+                        top: auto;
+                        right: auto;
+                        bottom: 0;
+                        left: 174px;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #000;
+                        background-color: #dedddc;
+                        text-align: center;
+                        padding: 20px 50px;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.footer {
+    .container {
+        .footer-img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
